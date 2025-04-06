@@ -1,16 +1,18 @@
 import Description from "@/components/Description";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Link from "next/link";
 
 function Home() {
-  let hiedeDescription = true;
   return (
     <main>
       <Header title="Title" textSub="text sub" />
-      {hiedeDescription && <Description />}  {/* if true, show description*/}
+      <Link href="/about">about</Link>
+      <Description />
       <Footer />
     </main>
   );
 }
 
 export default Home;
+   
