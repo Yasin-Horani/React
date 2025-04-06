@@ -1,32 +1,6 @@
-type HeaderParams = {
-  text: string;
-};
-
-function Header(props: HeaderParams) {
-  return <h1>{props.text}</h1>;
-}
-function Footer() {
-  return <h1>Footer</h1>;
-}
-function List() {
-  return (
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-  );
-}
-
-function Description() {
-  // react fragment <></>
-  return (
-    <>
-      <h2>List of items</h2>
-      <List />
-    </>
-  );
-}
+import Description from "@/components/Description";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 function Home() {
   return (
