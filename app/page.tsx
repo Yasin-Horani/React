@@ -7,7 +7,7 @@ function Home() {
   return (
     <main>
       <Header title="Title" textSub="text sub" />
-      <Link href="/about">about</Link>
+      <Link href="/about"><strong>About</strong></Link>
       <Description />
       <Footer />
     </main>
