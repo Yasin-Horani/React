@@ -1,5 +1,9 @@
-function Header() {
-  return <h1>Header</h1>;
+type HeaderParams = {
+  text: string;
+};
+
+function Header(props: HeaderParams) {
+  return <h1>{props.text}</h1>;
 }
 function Footer() {
   return <h1>Footer</h1>;
@@ -27,7 +31,7 @@ function Description() {
 function Home() {
   return (
     <main>
-      <Header />
+      <Header text="header from main" />
       <h1>Hallo wereld</h1>
       <Description />
       <Footer />
