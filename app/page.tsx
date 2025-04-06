@@ -7,7 +7,13 @@ function Home() {
   return (
     <main>
       <Header title="Title" textSub="text sub" />
-      <Link href="/about"><strong>About</strong></Link>
+      <Link href="/about">
+        <strong>About</strong>
+      </Link>
+      <br />
+      <Link href="/hooksPage">
+        <strong>Hooks</strong>
+      </Link>
       <Description />
       <Footer />
     </main>
@@ -15,4 +21,3 @@ function Home() {
 }
 
 export default Home;
-   
