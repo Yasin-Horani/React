@@ -1,13 +1,13 @@
 type HeaderParams = {
   title: string;
-  textsub?: string; // Optional title prop
+  textSub?: string; // Optional title prop
 };
 
-function Header(props: HeaderParams) {
+function Header({ title, textSub }: HeaderParams) {
   return (
     <>
-      <h1>{props.title}</h1>
-      <h3>{props.textsub}</h3>
+      <h1>{title}</h1>
+      <h3>{textSub}</h3>
     </>
   );
 }
