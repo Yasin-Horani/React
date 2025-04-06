@@ -1,9 +1,15 @@
 type HeaderParams = {
-  text: string;
+  title: string;
+  textsub?: string; // Optional title prop
 };
 
 function Header(props: HeaderParams) {
-  return <h1>{props.text}</h1>;
+  return (
+    <>
+      <h1>{props.title}</h1>
+      <h3>{props.textsub}</h3>
+    </>
+  );
 }
 
 export default Header;

@@ -5,8 +5,7 @@ import Header from "@/components/Header";
 function Home() {
   return (
     <main>
-      <Header text="header from main" />
-      <h1>Hallo wereld</h1>
+      <Header title="Title" textsub="text sub" />
       <Description />
       <Footer />
     </main>
