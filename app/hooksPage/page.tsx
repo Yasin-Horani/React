@@ -1,6 +1,5 @@
 "use client";
 
-import { log } from "console";
 import { useRef } from "react";
 
 function HooksPage() {
