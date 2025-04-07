@@ -1,4 +1,5 @@
 "use client";
+import { log } from "console";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -21,10 +22,18 @@ function HooksPage() {
       setCounter(counter - 1);
     }
   };
-// This effect runs when the component mounts and when the `success` or `counter` state changes
+// This effect runs when the component mounts and when the `success` state changes
   useEffect(() => {
+    console.log("Welcome to the Hooks Page!");
     alert("Welcome to the Hooks Page!");
-  }, [success, counter]);
+  }, [success]);
+ 
+  
+  // This effect runs when the component mounts and when the `counter` state changes
+  useEffect(() => {
+    console.log("counter is 10!");	
+    alert("coutner is 10!");
+  }, [counter === 10]);
 
 
   return (
